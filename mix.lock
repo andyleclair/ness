@@ -1,5 +1,7 @@
 %{
-  "elixir_make": {:hex, :elixir_make, "0.4.2", "332c649d08c18bc1ecc73b1befc68c647136de4f340b548844efc796405743bf", [:mix], [], "hexpm", "727834332ec92c69d91d1111f2de8519b459bce6730db2c0e0c2f46c7fd29374"},
-  "freedom_formatter": {:hex, :freedom_formatter, "1.0.0", "b19be4a845082d05d32bb23765e8e7bdc6d51decac13ab64ae44b0f6bf8a66d1", [:mix], [], "hexpm", "a002337e51c23d14ec10a17272d0dbca0cf03f247e4032ab202530a4f378708f"},
-  "nerves_uart": {:hex, :nerves_uart, "1.2.0", "195424116b925cd3bf9d666be036c2a80655e6ca0f8d447e277667a60005c50e", [:mix], [{:elixir_make, "~> 0.4", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm", "0a687f62bc65a021b858809815579571ee7abe5e68ebe737a7f159ff41e9bc9b"},
+  "dialyxir": {:hex, :dialyxir, "1.0.0", "6a1fa629f7881a9f5aaf3a78f094b2a51a0357c843871b8bc98824e7342d00a5", [:mix], [{:erlex, ">= 0.2.6", [hex: :erlex, repo: "hexpm", optional: false]}], "hexpm", "aeb06588145fac14ca08d8061a142d52753dbc2cf7f0d00fc1013f53f8654654"},
+  "elixir_make": {:hex, :elixir_make, "0.6.2", "7dffacd77dec4c37b39af867cedaabb0b59f6a871f89722c25b28fcd4bd70530", [:mix], [], "hexpm", "03e49eadda22526a7e5279d53321d1cced6552f344ba4e03e619063de75348d9"},
+  "erlex": {:hex, :erlex, "0.2.6", "c7987d15e899c7a2f34f5420d2a2ea0d659682c06ac607572df55a43753aa12e", [:mix], [], "hexpm", "2ed2e25711feb44d52b17d2780eabf998452f6efda104877a3881c2f8c0c0c75"},
+  "freedom_formatter": {:hex, :freedom_formatter, "1.1.1", "de6902f524a9bf32e83159baa35666f1e4d4834ad6f81e467da227fd13785656", [:mix], [], "hexpm", "5adfd4da5d6a35f0b4f8d9a77c1451b8dcb2391d5a630c3f2f05d9f06041443b"},
+  "nerves_uart": {:hex, :nerves_uart, "1.2.1", "ae3247e14915f79dde7d4f450ad4c0d4bdc7ab505e3d7c4d4799ac1121e0b505", [:mix], [{:elixir_make, "~> 0.4", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm", "510e400be82fcda486bb48d8026534f84f8e57b4cd27d76772175ef599debd54"},
 }
