@@ -23,7 +23,8 @@ defmodule Ness.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:nerves_uart, "~> 1.2"}
+      {:nerves_uart, "~> 1.2"},
+      {:freedom_formatter, "~> 1.0"},
     ]
   end
 end
