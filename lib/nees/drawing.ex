@@ -1,6 +1,6 @@
-defmodule Ness.Drawing do
-  alias Ness.Point
-  alias Ness.Command
+defmodule Nees.Drawing do
+  alias Nees.Point
+  alias Nees.Command
 
   @spec line(Point, Point) :: Command.t()
   def line(from, to) do

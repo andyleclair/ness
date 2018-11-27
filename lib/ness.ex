@@ -1,14 +1,14 @@
-defmodule Ness do
+defmodule Nees do
   @moduledoc """
-  Documentation for Ness.
+  Documentation for Nees.
   """
 
   defmacro __using__(_opts) do
     quote do
-      import Ness.Drawing
-      alias Ness.Point
-      alias Ness.Plotter
-      alias Ness.Paper
+      import Nees.Drawing
+      alias Nees.Point
+      alias Nees.Plotter
+      alias Nees.Paper
     end
   end
 end

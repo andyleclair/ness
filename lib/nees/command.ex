@@ -1,4 +1,4 @@
-defmodule Ness.Command do
+defmodule Nees.Command do
   @type t :: String.t()
 
   def initialize() do

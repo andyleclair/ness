@@ -1,9 +1,9 @@
-defmodule Ness.Sample.Circles3 do
+defmodule Nees.Sample.Circles3 do
   @moduledoc ~S"""
   Draws some circles in expanding rings
   """
 
-  use Ness
+  use Nees
 
   def main() do
     initial_size = 50

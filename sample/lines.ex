@@ -1,5 +1,5 @@
-defmodule Ness.Sample.Lines do
-  use Ness
+defmodule Nees.Sample.Lines do
+  use Nees
 
   def main() do
     start = Paper.center()

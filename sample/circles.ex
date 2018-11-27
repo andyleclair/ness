@@ -1,9 +1,9 @@
-defmodule Ness.Sample.Circles do
+defmodule Nees.Sample.Circles do
   @moduledoc ~S"""
   Draws a line of circles. Neat, but sorta boring
   """
 
-  use Ness
+  use Nees
   @step 200
   @radius 500
 

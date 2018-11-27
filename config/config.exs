@@ -2,7 +2,7 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :ness,
+config :nees,
   device: "ttyUSB0",
   speed: 9600
 
@@ -14,11 +14,11 @@ config :ness,
 
 # You can configure your application as:
 #
-#     config :ness, key: :value
+#     config :nees, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:ness, :key)
+#     Application.get_env(:nees, :key)
 #
 # You can also configure a 3rd-party app:
 #

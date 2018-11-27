@@ -1,10 +1,10 @@
-defmodule Ness.Sample.Circles2 do
+defmodule Nees.Sample.Circles2 do
   @moduledoc ~S"""
   Draws a line of circles, but on a sine wave!
   Much more interesting.
   """
 
-  use Ness
+  use Nees
   @step 200
   @radius 500
 

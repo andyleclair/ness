@@ -1,9 +1,9 @@
-defmodule Ness.MixProject do
+defmodule Nees.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :ness,
+      app: :nees,
       version: "0.1.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
@@ -16,7 +16,7 @@ defmodule Ness.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Ness.Application, []}
+      mod: {Nees.Application, []}
     ]
   end
 

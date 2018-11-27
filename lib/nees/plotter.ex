@@ -1,15 +1,15 @@
-defmodule Ness.Plotter do
+defmodule Nees.Plotter do
   use GenServer
   alias Nerves.UART
 
-  @device Application.get_env(:ness, :device, "ttyUSB0")
-  @speed Application.get_env(:ness, :speed, 9600)
+  @device Application.get_env(:nees, :device, "ttyUSB0")
+  @speed Application.get_env(:nees, :speed, 9600)
 
   def start_link(_) do
     GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
   end
 
-  @spec write(Ness.command()) :: :ok
+  @spec write(Nees.command()) :: :ok
   def write(code) do
     GenServer.call(__MODULE__, {:write, code}, :infinity)
   end

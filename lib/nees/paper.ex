@@ -1,5 +1,5 @@
-defmodule Ness.Paper do
-  alias Ness.Point
+defmodule Nees.Paper do
+  alias Nees.Point
 
   def units_per_inch(), do: 1016
   def xmax(), do: trunc(11 * units_per_inch())
