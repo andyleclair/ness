@@ -1,6 +1,22 @@
 # Nees
 
-**TODO: Add description**
+A library for interfacing with a HP 7475a pen plotter
+
+## Notes
+
+On Linux you may need to add yourself to the `dialout` group to access devices
+in the `/dev/tty*` area. If nothing happens when you boot an `iex` shell,
+that means the plotter hasn't been initialized and you should check this.
+
+To _really_ make sure that's what it is, run this in `iex` (replacing "ttyUSB0" with your device)
+
+```elixir
+iex> {:ok, pid} = Nerves.UART.start_link()
+iex> Nerves.UART.open(pid, "ttyUSB0", speed: 9600, active: true)
+```
+
+If that returns `{:error, :eacces}` then you need to be in `dialout` (also log out and back in)
+I
 
 ## Installation
 
