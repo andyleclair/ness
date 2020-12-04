@@ -1,4 +1,6 @@
 defmodule Nees.Plotter do
+  require Logger
+
   use GenServer
   alias Nerves.UART
 
@@ -17,11 +19,17 @@ defmodule Nees.Plotter do
   @impl true
   def init(_) do
     {:ok, pid} = UART.start_link()
-    UART.open(pid, @device, speed: @speed, active: true)
-    UART.write(pid, "IN;SP1;\r\n")
 
-    write_buffer()
-    {:ok, %{plotter: pid, buffer: []}}
+    case UART.open(pid, @device, speed: @speed, active: true) do
+      :ok ->
+        :ok = UART.write(pid, "IN;SP1;\r\n")
+        write_buffer()
+        {:ok, %{plotter: pid, buffer: []}}
+
+      {:error, err} ->
+        Logger.error("Error initializing the plotter: #{inspect(err)}")
+        {:stop, "Error initializing plotter"}
+    end
   end
 
   @impl true
@@ -51,6 +59,8 @@ defmodule Nees.Plotter do
         {:noreply, %{state | buffer: rest}}
     end
   end
+
+  # TODO: handle pushback message when we fill the plotter's buffer
 
   def write_buffer() do
     Process.send_after(self(), :flush_line, 250)
