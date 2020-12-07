@@ -24,7 +24,7 @@ defmodule Nees.MixProject do
   defp deps do
     [
       {:nerves_uart, "~> 1.2"},
-      {:freedom_formatter, "~> 1.0"},
+      {:dialyxir, "~> 1.0.0", only: [:dev], runtime: false}
     ]
   end
 end
